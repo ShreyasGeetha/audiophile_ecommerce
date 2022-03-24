@@ -1,6 +1,6 @@
 import { ShoppingCartIcon } from "@heroicons/react/outline";
-import Line from "./Line";
-import Logo from "./Logo";
+import Line from "../../Line";
+import Logo from "../../Logo/Logo";
 
 const DesktopHeader = () => {
   return (

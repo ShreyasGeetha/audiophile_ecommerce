@@ -94,7 +94,7 @@ module.exports = {
       },
       animation: {
          fadeIn: 'fadeIn 2s ease-in',
-         heroDescriptionAnimate: 'heroDescriptionAnimate 2s ease-in',
+         heroDescriptionAnimate: 'heroDescriptionAnimate 3s ease-in',
       },
       transitionDelay: {
         '0': '0ms',

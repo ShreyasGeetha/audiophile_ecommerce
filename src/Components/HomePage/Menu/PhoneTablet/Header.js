@@ -1,6 +1,6 @@
 import { MenuIcon } from '@heroicons/react/outline'
 import { ShoppingCartIcon } from '@heroicons/react/outline'
-import Logo from './Logo';
+import Logo from '../../Logo/Logo';
 
 const Header = () => {
   return (
