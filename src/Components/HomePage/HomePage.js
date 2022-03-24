@@ -14,7 +14,7 @@ function HomePage() {
     <>
       <div className='bg-pureBlack'>
         <div className=' max-w-3xl w-full h-full 
-            md:max-w-6xl 2XL:mx-auto 2XL:-z-30'>
+            md:max-w-8xl 2XL:mx-auto 2XL:-z-30'>
         
           <MobileTabletHeaderHero />          
           <DesktopHeader />

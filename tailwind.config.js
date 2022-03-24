@@ -6,9 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        13:'52px'
+      },
       height: {
         '1':'1px',
         '3': '15px',
+        '41':'165px',
       },
       fontFamily: {
         Manrope: "'Manrope', sans-serif"
@@ -49,6 +53,10 @@ module.exports = {
         15: ['15px', {          
           lineHeight: '25px',
         }],
+        '15v2': ['15px', {     
+          letterSpacing: '1.07px',
+          lineHeight: '20px',
+        }],
         36: ['36px', {
           letterSpacing: '1.29px',
           lineHeight: '40px',
@@ -62,6 +70,9 @@ module.exports = {
           lineHeight: '58px',
         }],
       },
+      boxShadow: {
+        'rounded': '0px 30px 40px 2px rgba(0, 0, 0, 1)',
+      },
       maxWidth: {
         '8xl': '1440px'
       },
@@ -70,16 +81,21 @@ module.exports = {
         '53': '216px',
         '41': '167px',
         '1/5': '20%',
+        '40': '40%',
         },
       padding: {
         15: '15px',
         8: '30px',
         eight: '32px'
       },
+      margin: {
+        17:'67px'
+      },
       screens: {
         smLg: '450px',
+        sms: '510px',
         smXL: '556px',
-        smXXL: '650px',
+        smXXL: '640px',
         '2XL': '1440px'
       },
       keyframes: {

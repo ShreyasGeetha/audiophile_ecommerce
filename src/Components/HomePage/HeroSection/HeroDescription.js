@@ -5,9 +5,11 @@ const HeroDescription = () => {
     <>
       <div className='absolute left-6 right-6 top-48 bottom-28 text-center font-Manrope text-white flex flex-col items-center content-center animate-heroDescriptionAnimate transition duration-500
       
-      smLg:left-1/7 smLg:right-1/7 smLg:top-1/3 smLg:bottom-1/3
+      smLg:left-1/7 smLg:right-1/7 smLg:top-40 smLg:bottom-1/3
       
-      smXL:left-1/5 smXL:right-1/5 smXL:top-1/3 smXL:bottom-1/3
+      sms:top-1/2
+
+      smXL:left-1/5 smXL:right-1/5 smXL:top-1/2 smXL:bottom-1/3
       
       smXXL:left-1/5 smXXL:right-1/5 smXXL:top-1/3 smXXL:bottom-1/3
       
