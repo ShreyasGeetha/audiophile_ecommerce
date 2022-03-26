@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ChevronRightIcon } from '@heroicons/react/outline';
+import ZX9SpeakerDisplay from './ZX9SpeakerDisplay';
 
 const ProductDisplay = () => {
   
@@ -13,9 +14,9 @@ const ProductDisplay = () => {
       },
       {
        productName:'speakers' ,
-       mobile: '/assets/product-zx9-speaker/mobile/ZX9_M.png',
-       tablet: '/assets/product-zx9-speaker/desktop/xx91M1_Desktop_shadow.jpg',
-       desktop: '/assets/product-zx9-speaker/tablet/xx91M1_Tablet_shadow.jpg'        
+       mobile: '/assets/home/mobile/zx9_m.png',
+       tablet: '/assets/home/desktop/xx91M1_Desktop_shadow.jpg',
+       desktop: '/assets/home/tablet/xx91M1_Tablet_shadow.jpg'        
       },
       {
        productName:'earphones' ,
@@ -29,41 +30,44 @@ const ProductDisplay = () => {
   
 
   return (
-    <div>
-      <div className='mt-10 mx-6 '>
+    <div className='border-1'>
+      <div className='mt-10 mx-6 md:grid md:grid-cols-3 md:gap-3 2XL:max-w-6xl 2XL:gap-8 2XL:mx-auto 2XL:my-24'>
         
         {/* products */}
         {
           products.items.map(product => {
             return (
-              <div className='flex flex-col items-center content-center relative font-Manrope font-bold uppercase text-pureBlack 
-              '>
-                <div>
-                  <Image src={product.mobile} width={132} height={140} />
-                </div>
+              <div >
+                <div className='flex flex-col items-center content-center relative font-Manrope font-bold uppercase text-pureBlack 
+                '>
+                  <div>
+                    <Image src={product.mobile} width={132} height={140} />
+                  </div>
 
-                <div className='shadow-rounded w-14 h-4 mt-16 bg-lightGray rounded-full absolute -z-10'></div>
-                
-                {/* product name */}
-                <div className='text-15v2 mt-1'>
-                  <span>{ product.productName}</span>
-                </div>
+                  <div className='shadow-rounded w-14 h-4 mt-16 bg-lightGray rounded-full absolute -z-10'></div>
+                  
+                  {/* product name */}
+                  <div className='text-15v2 mt-1 
+                        2XL:text-18v2'>
+                    <span>{ product.productName}</span>
+                  </div>
 
-                {/* shop */}
-                <div className='flex items-center justify-between mb-5 mt-4'>
-                  <span className=' text-13 opacity-50'>shop</span>
-                  <ChevronRightIcon className='w-3 h-3 mx-2 text-brown stroke-3' />
-                </div>
+                  {/* shop */}
+                  <div className='flex items-center justify-between mb-5 mt-4'>
+                    <span className=' text-13 opacity-50'>shop</span>
+                    <ChevronRightIcon className='w-3 h-3 mx-2 text-brown stroke-3' />
+                  </div>
 
-                {/* background */}
-                <div className='w-full h-41 bg-lightGray absolute -z-20 bottom-0 '>
-                </div>
-                
-              </div>                       
+                  {/* background */}
+                  <div className='w-full h-41 bg-lightGray absolute -z-20 bottom-0 rounded-lg'>
+                  </div>                  
+                </div>                       
+              </div>
             )             
           })
         }
-      </div>
+      </div>    
+      <ZX9SpeakerDisplay zx9={ products.items[1].mobile}/>
     </div>
   );
 }

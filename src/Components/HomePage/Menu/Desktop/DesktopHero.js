@@ -7,7 +7,7 @@ import imageHeaderTablet from '../../../../../public/assets/home/tablet/imageHea
 const DesktopHero = () => {
   return (
     <>      
-      <div className='hidden 2XL:block animate-fadeIn transition 2XL:mt-10  '>
+      <div className='hidden 2XL:block animate-fadeIn transition 2XL:mt-1  '>
         <div className='relative  overflow-hidden rounded-2xl'>
           <Image 
               src={imageHeroDesktop}

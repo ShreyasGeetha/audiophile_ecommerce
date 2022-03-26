@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        13:'52px'
+        13: '52px',
+        96: '458px'
       },
       height: {
         '1':'1px',
@@ -50,6 +51,10 @@ module.exports = {
           letterSpacing: '12px',
           lineHeight: '20px',
         }],
+        '18v2': ['18px', {
+          letterSpacing: '1.3px',
+          lineHeight: '25px',
+        }],
         15: ['15px', {          
           lineHeight: '25px',
         }],
@@ -86,6 +91,7 @@ module.exports = {
       padding: {
         15: '15px',
         8: '30px',
+        '8v2': '32px',
         eight: '32px'
       },
       margin: {
