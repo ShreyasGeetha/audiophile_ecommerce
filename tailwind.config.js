@@ -32,7 +32,8 @@ module.exports = {
         'white': '#FFFFFF',
         'lightGray': '#F1F1F1',
         'gray': '#FAFAFA',
-        'line': '#F2F2F2'
+        'line': '#F2F2F2',
+        'buttonGray': '#4C4C4C'
       },
       fontSize: {       
         13: ['13px', {
@@ -95,7 +96,8 @@ module.exports = {
         eight: '32px'
       },
       margin: {
-        17:'67px'
+        17: '67px',
+        41:'165px'
       },
       screens: {
         smLg: '450px',

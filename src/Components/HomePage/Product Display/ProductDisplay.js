@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { ChevronRightIcon } from '@heroicons/react/outline';
-import ZX9SpeakerDisplay from './ZX9SpeakerDisplay';
+
+import PatternCircles from '../../../../public/assets/home/desktop/PatternCircles.svg'
 
 const ProductDisplay = () => {
   
@@ -30,8 +31,8 @@ const ProductDisplay = () => {
   
 
   return (
-    <div className='border-1'>
-      <div className='mt-10 mx-6 md:grid md:grid-cols-3 md:gap-3 2XL:max-w-6xl 2XL:gap-8 2XL:mx-auto 2XL:my-24'>
+    <div className='border-1 border-red-400 w-full max-w-8xl mx-auto'>
+      <div className='mt-10 mx-6 md:grid md:grid-cols-3 md:gap-3 2XL:max-w-6xl 2XL:gap-8 2XL:mx-auto 2XL:my-24 relative'>
         
         {/* products */}
         {
@@ -66,8 +67,7 @@ const ProductDisplay = () => {
             )             
           })
         }
-      </div>    
-      <ZX9SpeakerDisplay zx9={ products.items[1].mobile}/>
+      </div>         
     </div>
   );
 }

@@ -3,10 +3,9 @@ import DesktopHeader from './Menu/Desktop/DesktopHeader';
 import DesktopHero from './Menu/Desktop/DesktopHero';
 import MobileTabletHeaderHero from './Menu/PhoneTablet/MobileTabletHeaderHero';
 
-import xx99M1_Mobile from '../../../public/assets/product-xx99-mark-one-headphones/mobile/xx99M1_Mobile.jpg'
-import xx99M1_Desktop from '../../../public/assets/product-xx99-mark-one-headphones/desktop/xx91M1_Desktop.jpg'
-import xx99M1_Tablet from '../../../public/assets/product-xx99-mark-one-headphones/tablet/xx91M1_Tablet.jpg'
+
 import ProductDisplay from './Product Display/ProductDisplay';
+import ZX9Display from './Product Display/ZX9Display';
 
 
 function HomePage() {
@@ -24,6 +23,7 @@ function HomePage() {
       
       {/* product display */}
       <ProductDisplay />
+      <ZX9Display />
     </>
   );
 }
